@@ -1,19 +1,20 @@
 {
-  "name": "@caffeine/template-app",
+  "name": "z-square-app",
   "type": "module",
-  "engines": {
-    "node": ">=16.0.0",
-    "pnpm": ">=7.0.0",
-    "npm": "please use pnpm"
-  },
   "scripts": {
-    "build": "pnpm -r --if-present run build",
-    "prebuild": "pnpm -r --if-present run prebuild",
-    "pretest": "pnpm -r --if-present run prebuild",
-    "start": "pnpm -r --if-present run start",
-    "test": "pnpm -r --if-present run test"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "sharp": "^0.34.4"
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^4.4.0"
   }
 }
