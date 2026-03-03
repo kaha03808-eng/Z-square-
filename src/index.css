@@ -2,19 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  background-color: oklch(0.12 0.035 255);
-  color: white;
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  background-color: #050b18;
+  color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-/* Smooth scrolling for navigation */
-html {
-  scroll-behavior: smooth;
 }
