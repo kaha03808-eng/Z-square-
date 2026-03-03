@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Menu, ArrowRight, Star } from 'lucide-react';
 
 // Types define kar diye taaki TypeScript error na de
 interface StatItem {
