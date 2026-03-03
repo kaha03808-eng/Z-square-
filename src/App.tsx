@@ -1,12 +1,27 @@
-import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import ArchitecturalHighlights from './components/ArchitecturalHighlights';
+import StoresAndBrands from './components/StoresAndBrands';
+import DiningAndEntertainment from './components/DiningAndEntertainment';
+import VisitorServices from './components/VisitorServices';
+import Timings from './components/Timings';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="text-center p-10 bg-white shadow-xl rounded-2xl">
-        <h1 className="text-4xl font-bold text-blue-600 mb-4">Z-Square Mall</h1>
-        <p className="text-gray-600 italic">Coming Soon - Kanpur's Best Shopping Destination!</p>
-      </div>
+    <div className="min-h-screen bg-navy-deep">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <ArchitecturalHighlights />
+        <StoresAndBrands />
+        <DiningAndEntertainment />
+        <VisitorServices />
+        <Timings />
+      </main>
+      <Footer />
     </div>
   );
 }
