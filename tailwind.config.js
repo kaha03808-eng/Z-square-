@@ -1,17 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
-        'navy-deep': 'oklch(0.12 0.035 255)',
-        'gold': 'oklch(0.72 0.14 75)',
+        gold: '#d4af37',
+        navy: '#050b18',
       },
       fontFamily: {
-        display: ['Playfair Display', 'serif'],
-        body: ['Inter', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
       },
     },
   },
   plugins: [],
-};
+}
