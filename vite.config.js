@@ -1,6 +1,6 @@
 import { fileURLToPath, URL } from 'url';
-import react from '@vitejs/react-plugin';
 import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 import environment from 'vite-plugin-environment';
 
 export default defineConfig({
@@ -27,14 +27,6 @@ export default defineConfig({
     environment('all', { prefix: 'CANISTER_' }),
     environment('all', { prefix: 'DFX_' }),
   ],
-  css: {
-    postcss: {
-      plugins: [
-        require('tailwindcss'),
-        require('autoprefixer'),
-      ],
-    },
-  },
   resolve: {
     alias: [
       {
